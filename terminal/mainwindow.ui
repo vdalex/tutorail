@@ -402,7 +402,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>at+send=0,2,000000000000007F0000000000000000</string>
+     <string>at+send=0,2,03670110056700FF</string>
     </property>
    </widget>
    <widget class="QLineEdit" name="lineEdit_6">
@@ -455,6 +455,97 @@
     </property>
     <property name="text">
      <string>at+get_config=tx_power</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_10">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>370</y>
+      <width>481</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>sys reset</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_11">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>410</y>
+      <width>481</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>mac join otaa</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_12">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>450</y>
+      <width>481</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>mac tx uncnf 2 03670110056700FF</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_13">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>490</y>
+      <width>481</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>mac tx cnf 2 03670110056700FF</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_14">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>530</y>
+      <width>481</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>mac set adr on</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_15">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>570</y>
+      <width>481</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>mac get status</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_16">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>610</y>
+      <width>481</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>radio get sf</string>
     </property>
    </widget>
   </widget>
@@ -603,5 +694,22 @@
  <resources>
   <include location="terminal.qrc"/>
  </resources>
- <connections/>
+ <connections>
+  <connection>
+   <sender>actionClear</sender>
+   <signal>triggered()</signal>
+   <receiver>textBrowser</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>174</x>
+     <y>392</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>
